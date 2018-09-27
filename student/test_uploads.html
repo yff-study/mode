@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+   <!--post 请求可以传输大量数据(一定post)-->
+   <!--get  请求可以传输1kb-->
+   <!--enctype="multipart/form-data"-->
+   <!--浏览器默认传数据按照文本传递，将传递方式改二进制传递-->
+  <form action="db/user_trans.php" method="post" enctype="multipart/form-data">
+    <label for="file">文件名</label>
+    <input type="file" name="mypic" id="file" /> <br/>
+    <input type="submit" value="上传"/>
+  </form>
+</body>
+</html>
